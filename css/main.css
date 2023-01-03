@@ -117,7 +117,7 @@ textarea {
   
    }
    .chart{
-    height: 100px;
+  
    }
 
    .spending{
@@ -128,7 +128,11 @@ textarea {
     align-items: center
     
    }
-   
+
+
+  /* Graph Style */
+
+
 
   /* Mobile Style //////////////////////////////////*/
 
