@@ -120,7 +120,7 @@ textarea {
   
    }
 
-   .spending{
+   .weekly-spending{
     border-top: lightgrey 2px solid;
     padding-top: 20px;
     display: flex;
@@ -131,7 +131,20 @@ textarea {
 
 
   /* Graph Style */
+  #chart{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  }
 
+ .bar{
+  height: 50px;
+  background-color: blue;
+ }
+
+ .label{
+  text-align: center;
+ }
 
 
   /* Mobile Style //////////////////////////////////*/
