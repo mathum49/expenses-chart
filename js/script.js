@@ -45,7 +45,7 @@ const spendingData = [
 
             let barDiv = document.createElement('div');
             barDiv.className = 'bar';
-            barDiv.style.height += (day.amount * 5)+ "px";
+            barDiv.style.height += (day.amount * 4)+ "px";
             weekdayDiv.appendChild(barDiv);
 
             let labelDiv = document.createElement('div');

@@ -88,16 +88,30 @@ textarea {
    ========================================================================== */
 
   /* General Style //////////////////////////////////*/
+
+  /* ## Colors */
+
+  :root {
+--color-soft-red: hsl(10, 79%, 65%);
+--color-cyan: hsl(186, 34%, 60%);
+
+
+--color-dark-brown: hsl(25, 47%, 15%);
+--color-medium-brown: hsl(28, 10%, 53%);
+--color-cream: hsl(27, 66%, 92%);
+--color-pale-orange: hsl(33, 100%, 98%);
+  }
+
    body{
     font-family: 'DM Sans', sans-serif;
-    background-color: hsl(33, 100%, 98%);
+    background-color: var(--color-cream);
     /* display: flex;
     justify-content: center; */
    }
 
    header{
-    background-color: hsl(10, 79%, 65%);
-    color: white;
+    background-color: var(--color-soft-red);
+    color: var(--color-pale-orange);
     border-radius: 15px;
     padding: 20px;
     margin: 10px;
@@ -108,16 +122,20 @@ textarea {
    }
 
    main{
-    background-color: white;
+    background-color: var(--color-pale-orange);
     border-radius: 15px;
     margin: 10px;
     padding: 20px;
-
-
-  
    }
-   .chart{
   
+   .daily-spending{
+    margin-bottom: 20px;
+   }
+
+   .daily-spending h2{
+    margin: 15px 0;
+    color: var(--color-dark-brown);
+    font-size: 25px;
    }
 
    .weekly-spending{
@@ -125,27 +143,58 @@ textarea {
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    align-items: center
-    
+    align-items: center;
    }
 
+   .weekly-spending h1{
+    margin: 5px 0;
+   }
+   
+   .weekly-spending p {
+    color: var(--color-medium-brown);
+    font-size: 16px;
+   }
 
-  /* Graph Style */
+   .progress{
+    text-align: right;
+   }
+
+  /* Graph Style *********************/
   #chart{
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  width: 100%;
   }
 
- .bar{
-  height: 50px;
-  background-color: blue;
- }
+  .weekday{
+    width: 11%;
+  }
 
- .label{
-  text-align: center;
- }
+  .bar{
+    background-color: var(--color-soft-red);
+    border-radius: 5px;
+  }
 
+  .bar:hover{
+    background-color: var(--color-cyan);
+  }
+
+ 
+
+  .label{
+    text-align: center;
+    margin: 10px 0;
+    color: var(--color-medium-brown)
+  }
+
+  .amount{
+    color: var(--color-pale-orange)
+  }
+
+  /* .amount:hover{
+    color: var(--color-cyan);
+  } */
 
   /* Mobile Style //////////////////////////////////*/
 
