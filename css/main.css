@@ -17,6 +17,10 @@ html {
   line-height: 1.4;
 }
 
+html, body {
+  min-height: 100vh;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -104,6 +108,9 @@ textarea {
    body{
     font-family: 'DM Sans', sans-serif;
     background-color: var(--color-cream);
+    display: flex;
+    align-items: center;
+    margin: 0;
    }
 
    header{
@@ -195,7 +202,6 @@ textarea {
      }
 
     .content{
-      padding-top: 50px;
       max-width: 500px;
       margin: auto;
     }
